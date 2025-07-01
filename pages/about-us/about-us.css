@@ -1,0 +1,74 @@
+    body {
+      font-family: 'Plus Jakarta Sans';
+      line-height: 1.6;
+      color: #333;
+      background: #fff;
+    }
+
+    .team-member img {
+      border-radius: 50%;
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+    }
+    .team-member h5 {
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+
+    .footer {
+      margin-top: 4rem;
+      padding: 2rem 0;
+      background-color: #f8f9fa;
+    }
+    .navbar-nav .nav-link {
+      margin-right: 1rem;
+    }
+
+    .section-aboutUs p {
+      font-family: 'Plus Jakarta Sans';
+      font-size: 14px;
+      font-weight: 400;
+      color: #876363;
+    }    
+
+
+    .section-aboutUs h2 {
+      font-family: 'Plus Jakarta Sans';
+      font-size: 32px;
+      font-weight: 700;
+      color: black;
+    }    
+
+    .section-OurTeam h3 {
+      font-family: 'Plus Jakarta Sans';
+      font-size: 22px;
+      font-weight: 700;
+      color: black;
+    }
+    
+    .section-OurTeam h5 {
+      font-family: 'Plus Jakarta Sans';
+      font-size: 16px;
+      font-weight: 500;
+      color: #171212;
+    }    
+
+    .section-OurTeam p {
+      font-family: 'Plus Jakarta Sans';
+      font-size: 14px;
+      font-weight: 400;
+      color: #876363;
+    }        
+
+    .section-OurTeam img {
+      min-width: 269px;
+      min-height: 269px;
+    }        
+
+    .section-OurTeamText p {
+      font-family: 'Plus Jakarta Sans';
+      font-size: 16px;
+      font-weight: 400;
+      color: black;
+    }      
