@@ -134,6 +134,10 @@
   line-height: 21px;
 }
 
+.footer{
+  margin-top: 100px;
+}
+
 .footer__links {
   display: flex;
   align-items: center;
