@@ -18,38 +18,46 @@
   color: var(--text-secondary);
 }
 
-.search-container .form-control::placeholder {
+.search--container .form-control::placeholder {
   color: var(--text-secondary);
 }
 
-.navbar {
+.navbar__logo{
+  margin-right: 10px;
+}
+
+.navbar--bg {
   border-bottom: 1px solid var(--border);
 }
 
-.navbar-brand {
+.navbar__brand {
   font-weight: bold;
 }
 
-.container-fluid {
+.navbar__container {
   padding: 0px 50px;
 }
 
-.navbar-actions {
+.navbar__actions {
   gap: 20px;
   min-width: 400px;
 }
 
-.search-container {
+.navbar__cart{
+  background: var(--bg-secondary);
+}
+
+.search--container {
   position: relative;
   width: 250px;
 }
 
-.search-container .form-control {
+.search__input {
   padding-left: 40px;
   padding-right: 12px;
 }
 
-.search-container .search-icon {
+.search__icon {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -59,11 +67,11 @@
   font-size: 16px;
 }
 
-.header-content {
+.header__content {
   margin: 20px 0;
 }
 
-.header-title {
+.header__title {
   color: var(--bg);
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 48px;
@@ -73,7 +81,7 @@
   letter-spacing: -2px;
 }
 
-.header-description {
+.header__description {
   color: var(--bg);
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
@@ -82,7 +90,8 @@
   line-height: 24px;
 }
 
-.featured-title {
+.featured__title,
+.category__title {
   color: var(--text-primary);
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 24px;
@@ -93,15 +102,20 @@
   text-align: left;
 }
 
-.container {
+.featured__container,
+.category__container,
+.footer__container {
   padding: 0 120px;
 }
 
-section {
+.featured,
+.category,
+.footer {
   margin: 40px 0;
 }
 
-.section-title {
+.featured__subtitle,
+.category__subtitle {
   color: var(--text-primary);
   font-family: "Plus Jakarta Sans";
   font-size: 16px;
@@ -111,7 +125,7 @@ section {
   margin: 10px 0 0 0;
 }
 
-.section-p {
+.featured__description {
   color: var(--text-secondary);
   font-family: "Plus Jakarta Sans";
   font-size: 14px;
@@ -120,15 +134,14 @@ section {
   line-height: 21px;
 }
 
-
-.footer-section {
+.footer__links {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
 
-h4 {
+.footer__link {
   color: var(--text-secondary);
   text-align: center;
   font-family: "Plus Jakarta Sans";
@@ -138,7 +151,7 @@ h4 {
   line-height: 24px;
 }
 
-.footer-text {
+.footer__text {
   color: var(--text-secondary);
   text-align: center;
   font-family: "Plus Jakarta Sans";
