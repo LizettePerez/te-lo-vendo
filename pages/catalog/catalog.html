@@ -18,12 +18,12 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg">
+    <header class="header">
+        <nav class="header__navbar navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand d-flex align-items-center" href="#">
-                    <img src="./img/svg/logo-icon.svg" alt="Te lo Vendo Logo" class="me-2">
-                    <strong>Te lo Vendo</strong>
+                <a class="header__brand navbar-brand d-flex align-items-center" href="#">
+                    <img src="./img/svg/logo-icon.svg" alt="Te lo Vendo Logo" class="header__logo me-2">
+                    <strong class="header__title">Te lo Vendo</strong>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
@@ -31,31 +31,31 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                    <ul class="header__nav navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="header__nav-item nav-item">
+                            <a class="header__nav-link nav-link" href="#">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Shop</a>
+                        <li class="header__nav-item nav-item">
+                            <a class="header__nav-link nav-link" href="#">Shop</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                        <li class="header__nav-item nav-item">
+                            <a class="header__nav-link nav-link" href="#">About</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                        <li class="header__nav-item nav-item">
+                            <a class="header__nav-link nav-link" href="#">Contact</a>
                         </li>
                     </ul>
-                    <div class="d-flex align-items-center gap-3">
-                        <form class="d-flex position-relative" role="search">
-                            <img src="./img/svg/serch-icon.svg" alt="Search" class="search-icon">
-                            <input class="form-control search-input" type="search" placeholder="Search"
-                                aria-label="Search">
+                    <div class="header__actions d-flex align-items-center gap-3">
+                        <form class="header__search d-flex position-relative" role="search">
+                            <img src="./img/svg/serch-icon.svg" alt="Search" class="header__search-icon search-icon">
+                            <input class="header__search-input form-control search-input" type="search"
+                                placeholder="Search" aria-label="Search">
                         </form>
-                        <button class="btn cart-btn" type="button">
-                            <img src="./img/svg/cart-icon.svg" alt="Cart" class="cart-icon">
+                        <button class="header__cart-btn btn cart-btn" type="button">
+                            <img src="./img/svg/cart-icon.svg" alt="Cart" class="header__cart-icon cart-icon">
                         </button>
-                        <button class="user-btn" type="button">
-                            <img src="./img/user-icon.png" alt="User" class="user-icon">
+                        <button class="header__user-btn user-btn" type="button">
+                            <img src="./img/user-icon.png" alt="User" class="header__user-icon user-icon">
                         </button>
                     </div>
                 </div>
@@ -63,114 +63,122 @@
         </nav>
     </header>
 
-    <main>
-        <nav aria-label="breadcrumb">
+    <main class="catalog">
+        <nav class="catalog__breadcrumb" aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home /</a></li>
+                <li class="breadcrumb-item"><a href="#" class="catalog__breadcrumb-link">Home /</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Women</li>
             </ol>
         </nav>
-        <h1>Women's Clothing</h1>
-        <div class="mb-3" role="group">
-            <button type="button" class="btn">Tops</button>
-            <button type="button" class="btn">Bottoms</button>
-            <button type="button" class="btn">Dresses</button>
-            <button type="button" class="btn">Outerwear</button>
-            <button type="button" class="btn">Shoes</button>
+        <h1 class="catalog__title">Women's Clothing</h1>
+        <div class="catalog__filters mb-3" role="group">
+            <button type="button" class="catalog__filter-btn btn">Tops</button>
+            <button type="button" class="catalog__filter-btn btn">Bottoms</button>
+            <button type="button" class="catalog__filter-btn btn">Dresses</button>
+            <button type="button" class="catalog__filter-btn btn">Outerwear</button>
+            <button type="button" class="catalog__filter-btn btn">Shoes</button>
         </div>
-        <h2>Featured Products</h2>
-        <div class="row row-cols-1 row-cols-md-4 g-4">
-            <div class="col">
-                <div class="card">
-                    <img src="./img/elegant-summer-dress.png" class="card-img-top" alt="Elegant Summer Dress">
-                    <div class="card-body">
-                        <h5 class="card-title">Elegant Summer Dress</h5>
-                        <p class="card-text">$79.99</p>
+        <h2 class="catalog__section-title">Featured Products</h2>
+        <div class="catalog__products row row-cols-1 row-cols-md-4 g-4">
+            <div class="catalog__product-wrapper col">
+                <div class="product-card card">
+                    <img src="./img/elegant-summer-dress.png" class="product-card__image card-img-top"
+                        alt="Elegant Summer Dress">
+                    <div class="product-card__body card-body">
+                        <h5 class="product-card__title card-title">Elegant Summer Dress</h5>
+                        <p class="product-card__price card-text">$79.99</p>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="./img/casual-denim-jacket.png" class="card-img-top" alt="Casual Denim Jacket">
-                    <div class="card-body">
-                        <h5 class="card-title">Casual Denim Jacket</h5>
-                        <p class="card-text">$59.99</p>
+            <div class="catalog__product-wrapper col">
+                <div class="product-card card">
+                    <img src="./img/casual-denim-jacket.png" class="product-card__image card-img-top"
+                        alt="Casual Denim Jacket">
+                    <div class="product-card__body card-body">
+                        <h5 class="product-card__title card-title">Casual Denim Jacket</h5>
+                        <p class="product-card__price card-text">$59.99</p>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="./img/comfortable-running-shoes.png" class="card-img-top" alt="Comfortable Running Shoes">
-                    <div class="card-body">
-                        <h5 class="card-title">Comfortable Running Shoes</h5>
-                        <p class="card-text">$89.99</p>
+            <div class="catalog__product-wrapper col">
+                <div class="product-card card">
+                    <img src="./img/comfortable-running-shoes.png" class="product-card__image card-img-top"
+                        alt="Comfortable Running Shoes">
+                    <div class="product-card__body card-body">
+                        <h5 class="product-card__title card-title">Comfortable Running Shoes</h5>
+                        <p class="product-card__price card-text">$89.99</p>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="./img/stylish-handbag.png" class="card-img-top" alt="Stylish Handbag">
-                    <div class="card-body">
-                        <h5 class="card-title">Stylish Handbag</h5>
-                        <p class="card-text">$49.99</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <h2>New Arrivals</h2>
-        <div class="row row-cols-1 row-cols-md-4 g-4">
-            <div class="col">
-                <div class="card">
-                    <img src="./img/modern-blazer.png" class="card-img-top" alt="Modern Blazer">
-                    <div class="card-body">
-                        <h5 class="card-title">Modern Blazer</h5>
-                        <p class="card-text">$99.99</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="./img/chic-skirt.png" class="card-img-top" alt="Chic Skirt">
-                    <div class="card-body">
-                        <h5 class="card-title">Chic Skirt</h5>
-                        <p class="card-text">$49.99</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="./img/leather-boots.png" class="card-img-top" alt="Leather Boots">
-                    <div class="card-body">
-                        <h5 class="card-title">Leather Boots</h5>
-                        <p class="card-text">$129.99</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="./img/fashionable-scarf.png" class="card-img-top" alt="Fashionable Scarf">
-                    <div class="card-body">
-                        <h5 class="card-title">Fashionable Scarf</h5>
-                        <p class="card-text">$29.99</p>
+            <div class="catalog__product-wrapper col">
+                <div class="product-card card">
+                    <img src="./img/stylish-handbag.png" class="product-card__image card-img-top" alt="Stylish Handbag">
+                    <div class="product-card__body card-body">
+                        <h5 class="product-card__title card-title">Stylish Handbag</h5>
+                        <p class="product-card__price card-text">$49.99</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <nav aria-label="Page navigation">
-            <ul class="pagination">
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
+        <h2 class="catalog__section-title">New Arrivals</h2>
+        <div class="catalog__products row row-cols-1 row-cols-md-4 g-4">
+            <div class="catalog__product-wrapper col">
+                <div class="product-card card">
+                    <img src="./img/modern-blazer.png" class="product-card__image card-img-top" alt="Modern Blazer">
+                    <div class="product-card__body card-body">
+                        <h5 class="product-card__title card-title">Modern Blazer</h5>
+                        <p class="product-card__price card-text">$99.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__product-wrapper col">
+                <div class="product-card card">
+                    <img src="./img/chic-skirt.png" class="product-card__image card-img-top" alt="Chic Skirt">
+                    <div class="product-card__body card-body">
+                        <h5 class="product-card__title card-title">Chic Skirt</h5>
+                        <p class="product-card__price card-text">$49.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__product-wrapper col">
+                <div class="product-card card">
+                    <img src="./img/leather-boots.png" class="product-card__image card-img-top" alt="Leather Boots">
+                    <div class="product-card__body card-body">
+                        <h5 class="product-card__title card-title">Leather Boots</h5>
+                        <p class="product-card__price card-text">$129.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__product-wrapper col">
+                <div class="product-card card">
+                    <img src="./img/fashionable-scarf.png" class="product-card__image card-img-top"
+                        alt="Fashionable Scarf">
+                    <div class="product-card__body card-body">
+                        <h5 class="product-card__title card-title">Fashionable Scarf</h5>
+                        <p class="product-card__price card-text">$29.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="catalog__pagination" aria-label="Page navigation">
+            <ul class="catalog__pagination-list pagination">
+                <li class="catalog__pagination-item page-item">
+                    <a class="catalog__pagination-link page-link" href="#" aria-label="Previous">
                         <span aria-hidden="true">&lt;</span>
                     </a>
                 </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
+                <li class="catalog__pagination-item page-item"><a class="catalog__pagination-link page-link"
+                        href="#">1</a></li>
+                <li class="catalog__pagination-item page-item"><a class="catalog__pagination-link page-link"
+                        href="#">2</a></li>
+                <li class="catalog__pagination-item page-item"><a class="catalog__pagination-link page-link"
+                        href="#">3</a></li>
+                <li class="catalog__pagination-item page-item"><a class="catalog__pagination-link page-link"
+                        href="#">4</a></li>
+                <li class="catalog__pagination-item page-item">
+                    <a class="catalog__pagination-link page-link" href="#" aria-label="Next">
                         <span aria-hidden="true">&gt;</span>
                     </a>
                 </li>
@@ -178,14 +186,14 @@
         </nav>
     </main>
 
-    <footer>
-        <div class="container text-center py-4">
-            <p>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Contact Us</a>
+    <footer class="footer">
+        <div class="footer__container container text-center py-4">
+            <p class="footer__links">
+                <a href="#" class="footer__link">Privacy Policy</a>
+                <a href="#" class="footer__link">Terms of Service</a>
+                <a href="#" class="footer__link">Contact Us</a>
             </p>
-            <p>&copy; 2024 Te lo Vendo. All rights reserved.</p>
+            <p class="footer__copyright">&copy; 2024 Te lo Vendo. All rights reserved.</p>
         </div>
     </footer>
 </body>
