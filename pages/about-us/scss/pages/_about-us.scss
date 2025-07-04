@@ -1,0 +1,53 @@
+
+.section-aboutUs {
+  p {
+    font-family: $font-main;
+    font-size: 14px;
+    font-weight: 400;
+    color: $color-primary;
+  }
+
+  h2 {
+    font-family: $font-main;
+    font-size: 32px;
+    font-weight: 700;
+    color: $color-black;
+  }
+}
+
+.section-OurTeam {
+  h3 {
+    font-family: $font-main;
+    font-size: 22px;
+    font-weight: 700;
+    color: $color-black;
+  }
+
+  h5 {
+    font-family: $font-main;
+    font-size: 16px;
+    font-weight: 500;
+    color: $color-dark;
+  }
+
+  p {
+    font-family: $font-main;
+    font-size: 14px;
+    font-weight: 400;
+    color: $color-primary;
+  }
+
+  img {
+    min-width: 269px;
+    min-height: 269px;
+  }
+}
+
+.section-OurTeamText {
+  p {
+    font-family: $font-main;
+    font-size: 16px;
+    font-weight: 400;
+    color: $color-black;
+  }
+}

@@ -1,0 +1,93 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 1rem;
+}
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+.team-member img {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+.team-member h5 {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+.team-member p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #876363;
+}
+
+.footer {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer a.text-primary {
+  color: blue;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer p {
+  color: #6c757d;
+}
+
+.section-aboutUs p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #876363;
+}
+.section-aboutUs h2 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+}
+
+.section-OurTeam h3 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: black;
+}
+.section-OurTeam h5 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #171212;
+}
+.section-OurTeam p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #876363;
+}
+.section-OurTeam img {
+  min-width: 269px;
+  min-height: 269px;
+}
+
+.section-OurTeamText p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+}
+
+/*# sourceMappingURL=about-us.css.map */
