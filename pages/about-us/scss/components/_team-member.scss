@@ -1,0 +1,20 @@
+
+.team-member {
+  img {
+    border-radius: 50%;
+    width: $img-size;
+    height: $img-size;
+    object-fit: cover;
+  }
+
+  h5 {
+    margin-top: 1rem;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    color: $color-primary;
+  }
+}
