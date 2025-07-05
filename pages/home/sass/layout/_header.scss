@@ -1,0 +1,27 @@
+@use '../abstracts/variables';
+
+.header {
+  margin: 20px 0;
+  &____content {
+    margin: 20px 0;
+  }
+
+  &____title {
+    color: variables.$bg;
+    font-family: variables.$font-family-main;
+    font-size: variables.$font-size-xl;
+    font-style: normal;
+    font-weight: variables.$font-weight-boldest;
+    line-height: variables.$line-height-xl;
+    letter-spacing: variables.$letter-spacing-title;
+  }
+
+  &____description {
+    color: variables.$bg;
+    font-size: variables.$font-size-xl;
+    font-size: variables.$font-size-md;
+    font-style: normal;
+    font-weight: variables.$font-weight-regular;
+    line-height: variables.$line-height-md;
+  }
+}
