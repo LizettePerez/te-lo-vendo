@@ -1,0 +1,73 @@
+@use '../abstracts/variables';
+
+.main {
+  .featured {
+    margin: 40px 0;
+
+    &__title {
+      color: variables.$text-primary;
+      font-family: variables.$font-family-main;
+      font-size: variables.$font-size-lg;
+      font-style: normal;
+      font-weight: variables.$font-weight-bold;
+      line-height: variables.$line-height-lg;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    &__subtitle {
+      color: variables.$text-primary;
+      font-family: variables.$font-family-main;
+      font-size: variables.$font-size-md;
+      font-style: normal;
+      font-weight: variables.$font-weight-medium;
+      line-height: variables.$line-height-md;
+      margin-bottom: 20px;
+      margin: 10px 0 0 0;
+    }
+
+    &__container {
+      padding: 0 120px;
+    }
+
+    &__description {
+      color: variables.$text-secondary;
+      font-family: variables.$font-family-main;
+      font-size: variables.$font-size-sm;
+      font-style: normal;
+      font-weight: variables.$font-weight-regular;
+      line-height: variables.$line-height-sm;
+    }
+  }
+
+  .category {
+    margin: 40px 0;
+
+    &__title {
+      color: variables.$text-primary;
+      font-family: variables.$font-family-main;
+      font-size: variables.$font-size-lg;
+      font-style: normal;
+      font-weight: variables.$font-weight-bold;
+      line-height: variables.$line-height-lg;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    &__subtitle {
+      color: variables.$text-primary;
+      font-family: variables.$font-family-main;
+      font-size: variables.$font-size-md;
+      font-style: normal;
+      font-weight: variables.$font-weight-medium;
+      line-height: variables.$line-height-md;
+      margin-bottom: 20px;
+      margin: 10px 0 0 0;
+    }
+
+    &__container {
+      padding: 0 120px;
+    }
+
+  }
+}

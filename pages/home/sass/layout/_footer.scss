@@ -1,0 +1,43 @@
+@use '../abstracts/variables';
+
+.footer {
+  margin: 100px 0 40px 0;
+
+  &__container {
+    padding: 0 120px;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__link {
+    color: variables.$text-secondary;
+    text-align: center;
+    font-family: variables.$font-family-main;
+    font-size: variables.$font-size-md;
+    font-style: normal;
+    font-weight: variables.$font-weight-regular;
+    line-height: variables.$line-height-md;
+
+    &:hover {
+      color: variables.$text-primary;
+      cursor: pointer;
+    }
+  }
+
+
+  &__text {
+    color: variables.$text-secondary;
+    text-align: center;
+    font-family: variables.$font-family-main;
+    font-size: variables.$font-size-sm;
+    font-style: normal;
+    font-weight: variables.$font-weight-regular;
+    line-height: variables.$line-height-md;
+    margin: 24px 0;
+  }
+}

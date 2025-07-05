@@ -1,0 +1,65 @@
+@use '../abstracts/variables';
+
+.navbar {
+  &__logo {
+    margin-right: 10px;
+  }
+
+  &--bg {
+    border-bottom: 1px solid variables.$border;
+  }
+
+  &__brand {
+    font-weight: variables.$font-weight-bold;
+  }
+
+  &__container {
+    padding: 0 50px;
+  }
+
+  &__actions {
+    gap: 20px;
+    min-width: 400px;
+  }
+
+  &__cart {
+    background: variables.$bg-secondary;
+  }
+
+  &__search-form {
+    display: flex;
+
+    .search {
+      &--container {
+        position: relative;
+        width: 250px;
+
+        .form-control {
+          background-color: variables.$bg-secondary;
+          border: none;
+          outline: none;
+          color: variables.$text-secondary;
+
+          &::placeholder {
+            color: variables.$text-secondary;
+          }
+        }
+      }
+
+      &__input {
+        padding-left: 40px;
+        padding-right: 12px;
+      }
+
+      &__icon {
+        position: absolute;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        color: variables.$text-secondary;
+        font-size: 16px;
+      }
+    }
+  }
+}
