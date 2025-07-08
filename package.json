@@ -1,0 +1,24 @@
+{
+  "name": "te-lo-vendo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "sass scss/main.scss dist/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LizettePerez/te-lo-vendo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LizettePerez/te-lo-vendo/issues"
+  },
+  "homepage": "https://github.com/LizettePerez/te-lo-vendo#readme",
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}
