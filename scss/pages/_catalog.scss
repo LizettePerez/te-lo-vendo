@@ -84,12 +84,12 @@
   }
 }
 
-// Compatibility with Bootstrap classes
+// Compatibilidad con clases de Bootstrap
 .breadcrumb-item.active {
   color: #333;
 }
 
-// Responsive Design
+// Diseño Responsivo
 @media (max-width: 1400px) {
   .catalog {
     padding: variables.$spacing-lg variables.$spacing-lg;
