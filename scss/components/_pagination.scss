@@ -1,0 +1,101 @@
+@use '../abstracts/variables' as variables;
+
+.catalog__pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.catalog__pagination-list {
+  margin: 0;
+  padding: variables.$spacing-xl 0;
+}
+
+.catalog__pagination-item {
+  margin: 0;
+
+  &.active .catalog__pagination-link {
+    background: none;
+    border: none;
+    color: variables.$color-titulo;
+    font-weight: 600;
+  }
+
+  &:first-child .catalog__pagination-link,
+  &:last-child .catalog__pagination-link {
+    color: variables.$color-titulo;
+    font-size: 16px;
+    font-weight: 400;
+
+    &:hover {
+      background: none;
+      color: variables.$color-titulo;
+      border: none;
+    }
+  }
+}
+
+.catalog__pagination-link {
+  border: none;
+  background: none;
+  color: variables.$color-titulo;
+  font-family: variables.$font-primary;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 12px;
+  margin: 0;
+  border-radius: variables.$border-radius-md;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
+
+  &:hover {
+    background: variables.$color-fondo;
+    color: variables.$color-titulo;
+    border: none;
+    border-radius: variables.$border-radius-md;
+  }
+
+  &:focus {
+    background: none;
+    border: none;
+    box-shadow: none;
+  }
+}
+
+// Bootstrap pagination compatibility
+.pagination .page-item,
+.catalog__pagination-item {
+  margin: 0;
+}
+
+.pagination .page-link,
+.catalog__pagination-link {
+  border: none;
+  background: none;
+  color: variables.$color-titulo;
+  font-family: variables.$font-primary;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 12px;
+  margin: 0;
+  border-radius: variables.$border-radius-md;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
+}
+
+.pagination .page-link:hover,
+.catalog__pagination-link:hover {
+  background: variables.$color-fondo;
+  color: variables.$color-titulo;
+  border: none;
+  border-radius: variables.$border-radius-md;
+}

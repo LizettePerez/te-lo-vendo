@@ -1,0 +1,233 @@
+@use '../abstracts/variables' as variables;
+
+.header {
+  background: variables.$color-bg;
+  border-bottom: 1px solid variables.$color-border;
+
+  &__navbar {
+    background-color: #FFF;
+    padding: 15px 50px;
+  }
+
+  &__brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  &__logo {
+    height: 20px;
+    width: auto;
+  }
+
+  &__nav .header__nav-link {
+    font-size: 1.0625rem;
+    padding: 0.625rem 1rem;
+    font-weight: 600;
+  }
+
+  &__search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    z-index: 10;
+    filter: brightness(0) saturate(100%) invert(27%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(98%) contrast(82%);
+  }
+
+  &__search-input {
+    background-color: variables.$color-fondo;
+    border: 1px solid variables.$color-fondo;
+    padding: 0.625rem 1.25rem 0.625rem 50px;
+    border-radius: variables.$border-radius-sm;
+    color: #333;
+    min-width: 250px;
+    height: 47px;
+
+    &::placeholder {
+      color: rgba(51, 51, 51, 0.7);
+    }
+
+    &:focus {
+      background-color: variables.$color-fondo;
+      box-shadow: variables.$box-shadow-sm;
+      color: #333;
+    }
+  }
+
+  &__cart-btn {
+    background: variables.$color-fondo;
+    border: 1px solid variables.$color-fondo;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 47px;
+    width: 47px;
+    border-radius: variables.$border-radius-sm;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: variables.$color-fondo;
+      border-color: variables.$color-fondo;
+    }
+  }
+
+  &__cart-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__user-btn {
+    background: #FFF;
+    border: 1px solid transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 47px;
+    width: 47px;
+    cursor: pointer;
+    border-radius: variables.$border-radius-md;
+    margin-left: 8px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #FFF;
+      border-color: transparent;
+    }
+  }
+
+  &__user-icon {
+    object-fit: cover;
+    width: 47px;
+    height: 47px;
+    border-radius: variables.$border-radius-md;
+    background-color: #FFF;
+  }
+}
+
+// Compatibility with Bootstrap classes
+.navbar-brand,
+.header__brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navbar-brand img,
+.header__logo {
+  height: 20px;
+  width: auto;
+}
+
+.navbar-nav .nav-link,
+.header__nav .header__nav-link {
+  font-size: 1.0625rem;
+  padding: 0.625rem 1rem;
+  font-weight: 600;
+}
+
+// Search compatibility - maintain original design
+.search-icon,
+.header__search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  z-index: 10;
+  filter: brightness(0) saturate(100%) invert(27%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(98%) contrast(82%);
+}
+
+.search-input,
+.header__search-input {
+  background-color: variables.$color-fondo;
+  border: 1px solid variables.$color-fondo;
+  padding: 0.625rem 1.25rem 0.625rem 50px;
+  border-radius: variables.$border-radius-sm;
+  color: #333;
+  min-width: 250px;
+  height: 47px;
+}
+
+.search-input::placeholder,
+.header__search-input::placeholder {
+  color: rgba(51, 51, 51, 0.7);
+}
+
+.search-input:focus,
+.header__search-input:focus {
+  background-color: variables.$color-fondo;
+  box-shadow: variables.$box-shadow-sm;
+  color: #333;
+}
+
+// Cart and User button compatibility
+.cart-btn,
+.header__cart-btn {
+  background: variables.$color-fondo;
+  border: 1px solid variables.$color-fondo;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 47px;
+  width: 47px;
+  border-radius: variables.$border-radius-sm;
+}
+
+.cart-btn:hover,
+.cart-btn:focus,
+.cart-btn:active,
+.header__cart-btn:hover,
+.header__cart-btn:focus,
+.header__cart-btn:active {
+  background: variables.$color-fondo;
+  border-color: variables.$color-fondo;
+}
+
+.cart-icon,
+.header__cart-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.user-btn,
+.header__user-btn {
+  background: #FFF;
+  border: 1px solid transparent;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 47px;
+  width: 47px;
+  cursor: pointer;
+  border-radius: variables.$border-radius-md;
+  margin-left: 8px;
+}
+
+.user-btn:hover,
+.user-btn:focus,
+.user-btn:active,
+.header__user-btn:hover,
+.header__user-btn:focus,
+.header__user-btn:active {
+  background-color: #FFF;
+  border-color: transparent;
+}
+
+.user-icon,
+.header__user-icon {
+  object-fit: cover;
+  width: 47px;
+  height: 47px;
+  border-radius: variables.$border-radius-md;
+  background-color: #FFF;
+}

@@ -20,5 +20,8 @@
   "homepage": "https://github.com/LizettePerez/te-lo-vendo#readme",
   "devDependencies": {
     "sass": "^1.89.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.7"
   }
 }

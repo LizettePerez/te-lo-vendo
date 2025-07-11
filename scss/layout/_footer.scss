@@ -1,0 +1,26 @@
+@use '../abstracts/variables' as variables;
+
+.footer__links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: variables.$spacing-sm;
+}
+
+.footer__link {
+  color: variables.$color-precio;
+  text-decoration: none;
+  font-family: variables.$font-primary;
+  font-size: 0.9rem;
+
+  &:hover {
+    color: variables.$color-precio;
+    text-decoration: none;
+  }
+}
+
+.footer__copyright {
+  color: variables.$color-precio;
+  font-size: 0.85rem;
+  margin: 0;
+}

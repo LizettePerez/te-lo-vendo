@@ -1,5 +1,13 @@
-@import 'abstracts/variables';
-@import 'pages/about-us';
-@import 'pages/catalog';
-@import 'pages/detail';
-@import 'pages/home';
+@use 'abstracts/variables' as variables;
+@use 'base/reset';
+@use 'base/typography';
+@use 'layout/header';
+@use 'layout/footer';
+@use 'components/buttons';
+@use 'components/forms';
+@use 'components/product-card';
+@use 'components/pagination';
+@use 'pages/about-us';
+@use 'pages/catalog';
+@use 'pages/detail';
+@use 'pages/home';
